@@ -1,0 +1,83 @@
+% Template to use to complete Problem Set 0.
+% Note that using this template is *optional*: it provides a nice foundation
+% for getting started with LaTeX, but you aren't required to use it!
+% If you are using ShareLaTeX, you'll want to upload this file to your account.
+% Before modifying this file, we recommend trying to compile it as-is
+% to see what the basic template gives.
+
+\documentclass[12pt]{article}
+
+\usepackage{amsmath}
+\usepackage[margin=2.5cm]{geometry}
+% If you want to use this package, make sure to download it from the course website!
+\usepackage{csc}
+
+% Document metadata
+\title{CSC165H1 -- Problem Set 0 (SAMPLE SOLUTION)}
+\author{David Liu \& Toniann Pitassi}
+\date{\today}
+
+
+% Document starts here
+\begin{document}
+\maketitle
+
+\section*{My Courses}
+% Replace this text with a list of the courses you're taking.
+\begin{itemize}
+\item CSC165H1, Mathematical Expression and Reasoning, D. Liu
+\item CSC148H1, Introduction to Computer Science, B. Simion
+\item PHL206H1, Later Medieval Philosophy, D. Black
+\item USA300H1, Theories and Methods in American Studies, A. Rahr
+\item WGS370H1, Utopian Visions, Activist Realities, J. Taylor
+\end{itemize}
+
+
+\section*{Set notation}
+
+% Fill in the following:
+
+\[
+S_1 \cap S_2 = \{2, 4, 6, 8, 10, 12, 14\}
+\]
+
+(Note that 0 is not positive.)
+
+\section*{A truth table}
+
+% Look at \texttt{sample\_latex.tex} for an example of a table.
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+$p$ & $q$ & $r$ & $(p \OR q) \IMP r$ \\
+\hline
+\FALSE & \FALSE & \FALSE & \TRUE  \\
+\FALSE & \FALSE & \TRUE  & \TRUE  \\
+\FALSE & \TRUE  & \FALSE & \FALSE \\
+\FALSE & \TRUE  & \TRUE  & \TRUE  \\
+\TRUE  & \FALSE & \FALSE & \FALSE \\
+\TRUE  & \FALSE & \TRUE  & \TRUE  \\
+\TRUE  & \TRUE  & \FALSE & \FALSE \\
+\TRUE  & \TRUE  & \TRUE  & \TRUE  \\
+\hline
+\end{tabular}
+\end{center}
+
+(Showing a separate column for $p \OR q$ is acceptable; this is like showing an intermediate step in a calculation.)
+
+\section*{A calculation}
+
+% Look at \texttt{sample\_latex.tex} for an example of align*.
+
+\begin{align*}
+2^{x - 5} &= a^x \\
+% TODO: fill in steps here!
+\frac{2^{x - 5}}{a^x} &= 1 \\
+2^{-5} \cdot \frac{2^x}{a^x} &= 1 \\
+\frac{1}{32} \cdot \frac{2^x}{a^x} &= 1 \\
+\left( \frac{2}{a} \right)^x &= 32 \\
+x &= \log_{2/a} (32)
+\end{align*}
+
+\end{document}
